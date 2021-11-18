@@ -1,0 +1,79 @@
+.welcome-page{
+    font-family: sans-serif;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(to right, #614385, #516395);
+}
+
+.welcome-text{
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    /* text-shadow: 0px 0px 0px white; */
+}
+
+main{
+    color: black;
+    font-size: 22px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+select{
+    padding: 2px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#startGameBtn{
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: font-size 100ms ease;
+    color: black;
+}
+
+#startGameBtn:hover{
+    background-color: #3f0053;
+    color: white;
+}
+
+#startGameBtn:active{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 500px){
+    .welcome-page{
+        gap: 80px;
+    }
+}
+
+.welcome-page.show{
+    display: flex;
+}

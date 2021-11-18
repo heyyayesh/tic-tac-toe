@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./welcomepage.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <div class="welcome-page" id="welcomePage">
+        <span class="welcome-text">Tic-Tac-Toe!</span>
+        <main>
+            <div class="opponent">
+                <label for="play-against">Play Against :</label>
+                <select name="play-against" id="playAgainst">
+                    <option value="friend">A Friend</option>
+                    <option value="ai">AI</option>
+                </select>
+            </div>
+            <div class="choose-sign">
+                <label for="your-sign">Your Sign :</label>
+                <select name="your-sign" id="yourSign">
+                    <option value="x">X</option>
+                    <option value="o">O</option>
+                </select>
+            </div>
+        </main>
+        <button id="startGameBtn">Start Game</button>
+    </div>
+
+    <div class="container">
+        <div class="board">
+            <div class="first row">
+                <div class="one" data-index="0"></div>
+                <div class="two" data-index="1"></div>
+                <div class="three" data-index="2"></div>
+            </div>
+            <div class="second row">
+                <div class="one" data-index="3"></div>
+                <div class="two" data-index="4"></div>
+                <div class="three" data-index="5"></div>
+            </div>
+            <div class="third row">
+                <div class="one" data-index="6"></div>
+                <div class="two" data-index="7"></div>
+                <div class="three" data-index="8"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
