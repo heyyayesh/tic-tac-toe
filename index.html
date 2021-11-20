@@ -7,11 +7,12 @@
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="./welcomepage.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./game-over-page.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
 
-    <div class="welcome-page" id="welcomePage">
+    <div class="welcome-page show" id="welcomePage">
         <span class="welcome-text">Tic-Tac-Toe!</span>
         <main>
             <div class="opponent">
@@ -50,6 +51,12 @@
                 <div class="three" data-index="8"></div>
             </div>
         </div>
+        <button class="restart-btn" id="restartOnMainPage"></button>
+    </div>
+
+    <div class="game-over-page">
+        <div class="game-over-text" id="gameOverText"></div>
+        <button class="restart-btn" id="restartOnGameOver">Restart</button>
     </div>
 </body>
 </html>
